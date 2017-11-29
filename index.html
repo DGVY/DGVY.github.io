@@ -268,6 +268,190 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/29/搭建OpenGL-freeglut开发环境/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="DGVY">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/My_avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="龙渊阁">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/11/29/搭建OpenGL-freeglut开发环境/" itemprop="url">搭建OpenGL-freeglut开发环境</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-29T22:24:18+08:00">
+                2017-11-29
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2017-11-29T22:42:29+08:00">
+                2017-11-29
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/图形学/" itemprop="url" rel="index">
+                    <span itemprop="name">图形学</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/图形学/OSG/" itemprop="url" rel="index">
+                    <span itemprop="name">OSG</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h1><ul>
+<li><a href="http://freeglut.sourceforge.net/index.php#download" target="_blank" rel="external">http://freeglut.sourceforge.net/index.php#download</a></li>
+</ul>
+<h1 id="Window10环境"><a href="#Window10环境" class="headerlink" title="Window10环境"></a>Window10环境</h1><h2 id="编译源码"><a href="#编译源码" class="headerlink" title="编译源码"></a>编译源码</h2><ul>
+<li>使用CMkae打开<code>./freeglut-x.x.x</code>路径下的<code>CMakeLists.txt</code></li>
+<li>生成VS2017工程</li>
+<li>打开工程，编译<code>ALL_BUILD</code>的Debug版本和Release版本</li>
+</ul>
+<h2 id="放置编译文件"><a href="#放置编译文件" class="headerlink" title="放置编译文件"></a>放置编译文件</h2><ul>
+<li>编译完成后，需要使用的文件有三处<ol>
+<li>源码文件夹中<code>./freeglut-x.x.x/include/GL/</code>路径下的四个头文件</li>
+<li>工程目录中<code>./bin/</code>目录下的<code>freeglut.dll</code>和<code>freeglutd.dll</code></li>
+<li>工程目录中<code>./lib/</code>目录下的<code>freeglut.lib</code>和<code>freeglutd.lib</code></li>
+</ol>
+</li>
+<li>将其分别移动到OSG环境路径下的相应文件夹中。</li>
+</ul>
+<h2 id="工程配置"><a href="#工程配置" class="headerlink" title="工程配置"></a>工程配置</h2><ul>
+<li>在VS工程属性<code>连接器</code>-&gt;<code>输入</code>中添加<code>freeglutd.lib</code>或<code>freeglut.lib</code></li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/15/C++-数组/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1893,7 +2077,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">10</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1904,7 +2088,7 @@
               
               <div class="site-state-item site-state-categories">
                 
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">10</span>
                   <span class="site-state-item-name">分类</span>
                 
               </div>
@@ -1915,7 +2099,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">13</span>
                   <span class="site-state-item-name">标签</span>
                 
               </div>
